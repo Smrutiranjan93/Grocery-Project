@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawesome icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <!-- header section  -->
+  <header class="header">
+    <ul class="linkinfo">
+      <!-- <div><marquee behavior="alternate" direction="left">Get $100 cashback on purchase of tv whose worth greator than $2000</marquee> </div> -->
+       <li class="linkinfo_text"><i class="fa-solid fa-location-dot "></i> Find a Store</li>
+        <li class="linkinfo_text">Buying guides</li>
+        <li class="linkinfo_text">Contact us</li>
+    </ul>
+    <div class="header_maininfo">
+        <div class="image">
+        <a href=""><span class="text"> </span>
+        <div class="img"><img src="data:image/png;base64,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" alt="logo" title="sasta grocery logo"> </div>
+        </div>
+        </a>
+        <div class="searchpanel">
+            <form>
+                <div class="box">
+                    <input type="text" placeholder="Enter Your favourite products" >
+                    <button type="button"><i class="fa fa-search"></i></button> 
+                </div>
+            </form>
+        </div>
+            <div class="itemlist">
+            <ul class="header_item_list">
+                <li><i class="fa-solid fa-location-pin"></i><a href="">Select your PIN Code</a> </li>
+                <li><i class="fa-sharp fa-solid fa-cart-shopping"></i> <a href="">Cart</a> </li>
+                <li><i class="fa-solid fa-user"></i><a href="login.html">Login</a> </li>
+                <li><i class="fa-solid fa-user"></i><a href="signup.html">Sign Up</a> </li>
+            </ul>
+        </div>
+    </div>
+
+  </header>
+    
+<!-- navbar section  -->
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: green;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color:white ;">Organic Corner</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <!-- <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Drinks & Beverages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Coffee</a></li>
+              <li><a class="dropdown-item" href="#">Energy & Soft Drinks</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Fruit Juices</a></li>
+            </ul>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link active" href="drinks.html" style="color:white ;">Fruits & Vegetable</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="drinks.html" style="color:white ;">Drinks & Beverages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contacts.html" style="color:white ;">Daily Supplies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contacts.html"style="color:white ;">Rice Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contacts.html"style="color:white ;">Masala Products</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color:white ;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html" style="color:white ;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="products.html"style="color:white ;">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contacts.html"style="color:white ;">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="cart.html"style="color:white ;">Cart</a>
+          </li>  
+          
+      </div>
+    </div>
+  </nav>
+
+  <div class="img1">
+    <img src="https://i.ytimg.com/vi/nf06gJ4hg60/maxresdefault.jpg" width="100%" height="270vw" alt="">
+  </div>
+  <!-- carosuel section  -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://cdn.grabon.in/gograbon/images/merchant/1549094966822.png" class="d-block w-100" alt="..."height="300vw">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.zoutons.com/images/originals/blog/3_47_1615773334.png" class="d-block w-100" alt="..."height="300vw">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.zoutons.com/images/originals/blog/main-banner_1627877941.png" class="d-block w-100" alt="..."height="300vw">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="banner">
+    <span> <h3>Kitchen Festival</h3></span>
+  </div>
+  <div class="banners">
+    <div class="banner1">
+        <img src="https://cdn.grabon.in/gograbon/images/merchant/1549094966822.png" alt="">
+    </div>
+    <div class="banner1">
+        <img src="https://cdn.zoutons.com/images/originals/stores/bigbasket2_1629954503.png" alt="">
+    </div> 
+    <div class="banner1">
+        <img src="https://i.ytimg.com/vi/nf06gJ4hg60/maxresdefault.jpg" alt="">
+    </div>
+    
+  </div>
+  <div class="banners">
+    <div class="banner1">
+        <img src="https://www.bigbasket.com/media/uploads/p/xxl/1212739_1-sugarlite-50-less-calories-sugar.jpg" alt="">
+    </div>
+    <div class="banner1">
+        <img src="https://i.pinimg.com/originals/ac/5e/84/ac5e84aee71507c49c57bb26a779d31d.jpg" alt="">
+    </div> 
+    <div class="banner1">
+        <img src="http://lh3.googleusercontent.com/V9R_Xi_hvZukIgk9DjhCNWofYBsXSFX5b288-wWgO1v5vvKEeX9q0IBHiBMtNKNPby278EtEQJClLH-q2C6RjEXbkiE=s750" alt="">
+    </div>
+    <div class="banner1">
+        <img src="http://lh3.googleusercontent.com/V9R_Xi_hvZukIgk9DjhCNWofYBsXSFX5b288-wWgO1v5vvKEeX9q0IBHiBMtNKNPby278EtEQJClLH-q2C6RjEXbkiE=s750" alt="">
+    </div>
+    
+  </div>
+
+  <div style="background-color:black;"color:>
+    <marquee behavior="alternate" direction="left">Get $100 cashback on purchase of tv whose worth greator than $2000</marquee>
+  </div>
+  <!-- footer  -->
+  <!-- contacts page -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col ">
+        <h3>Our Address</h3>
+       <p> <h5>Bhubaneswar Branch</h5>
+        Room- 208, 2nd Floor BMC Panchadeep Complex Unit 4, Bhubaneswar, Odisha, 751001 </p>
+        <P>
+        <h5>Bengaluru Branch</h5>
+        Talacauvery Housing Society Layout,
+        Basavanagara, Bengaluru, Karnataka 560037
+         9040015300 </P>
+      </div>
+      <div class="col" style="text-align:center ;">
+        <h3>Follow Us</h3>
+      <ul classs="socialid" style="list-style:none ;">
+        <li  class="social">
+            <a href="https://www.facebook.com/smrutiranjan.rout.73"> <i class="fab fa-facebook fa-2x"></i></a>
+        </li>
+        <li class="social">
+            <a href="https://www.linkedin.com/feed/"><i class="fab fa-twitter fa-2x"></i> </a>
+        </li>
+        <li class="social">
+            <a href=""> <i class="fa-brands fa-linkedin fa-2x"></i> </a>
+        </li>
+        <li class="social">
+            <a href=""><i class="fa-brands fa-instagram fa-2x"></i> </a>
+        </li>
+      </ul>
+      </div>
+      <div class="col link">
+        <h3>Quick links</h3>
+       <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="about.html">About US</a>
+        </li>
+        <li>
+            <a href="">Services</a>
+        </li>
+        <li>
+            <a href="">Portfolio</a>
+        </li>
+        <li>
+            <a href="#contacts">Contact Us</a>
+        </li>
+       </ul>
+      </div>
+    </div>
+  </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
